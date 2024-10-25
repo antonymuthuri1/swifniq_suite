@@ -1,0 +1,161 @@
+/* Customize the container */
+#firebaseui-auth-container {
+    background-color: #ffffff; /* Change the background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the buttons */
+  .firebaseui-idp-button {
+    background-color: #ff9b00; /* Customize button background */
+    color: #fff; /* Text color */
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  
+  .firebaseui-button {
+    background-color: #ff9b00; /* Customize button background */
+    color: #fff; /* Text color */
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px;
+  }
+
+  .firebaseui-button:hover {
+    background-color: #007bff; /* Customize button background */
+    color: #fff; /* Text color */
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px;
+  }
+
+  .firebaseui-card-actions {
+    
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  /* Hover effect for buttons */
+  /* .firebaseui-idp-button:hover {
+    background-color: #ff7f00;
+    transition: background-color 0.3s;
+  } */
+  
+  
+  /* Customize input fields */
+  .firebaseui-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  /* Customize error messages */
+  .firebaseui-error {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Style the title */
+  .firebaseui-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Additional custom styles */
+  .firebaseui-idp-text {
+    font-size: 16px;
+    color: #000000;
+    
+  }
+
+  /* Hide the duplicate icon text inside the buttons */
+.firebaseui-idp-text-long {
+  display:flex; /* This hides the duplicated text */
+}
+  
+ 
+/* More specific email sign-in button styling */
+.firebaseui-idp-password .firebaseui-idp-text {
+  color: #ffffff !important;  /* Change text color */
+}
+
+
+/* Hover effect */
+.firebaseui-idp-button {
+  border-radius: 11px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.firebaseui-idp-button:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.firebaseui-id-email {
+  background-color: #f3f2f2; 
+  color: #494848;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 11px;
+  margin-right: 0;
+  border-radius: 7px;
+  outline: none;
+}
+
+
+
+/* Adjust the text inside the button */
+.firebaseui-idp-button.firebaseui-idp-email .firebaseui-idp-text {
+  font-weight: bold;
+}
+
+/* Style the Terms of Service and Privacy Policy links */
+.firebaseui-tos p {
+  color: #333; /* Change the general text color */
+  font-size: 14px; /* Adjust font size */
+}
+
+.firebaseui-tos-link {
+  color: #007bff; /* Change link color */
+  text-decoration: underline; /* Optional: underline the links */
+}
+
+.firebaseui-tos-link:hover {
+  color: #ff9b00; /* Change color on hover */
+}
+
+.firebaseui-pp p {
+  color: #333; /* Change the general text color */
+  font-size: 14px; /* Adjust font size */
+}
+
+.firebaseui-pp-link {
+  color: #007bff; /* Change link color */
+  text-decoration: underline; /* Optional: underline the links */
+}
+
+.firebaseui-pp-link:hover {
+  color: #ff9b00; /* Change color on hover */
+}
+
+/* Style for the navigation buttons (Cancel, Next) */
+.firebaseui-container .firebaseui-button {
+  margin: 0 10px !important;  /* Adds horizontal space between buttons */
+}
+
+/* Alternatively, you can target them more specifically */
+.firebaseui-id-page-password-sign-in .firebaseui-button {
+  margin-right: 10px !important;  /* Adds space to the right of Cancel */
+  
+}

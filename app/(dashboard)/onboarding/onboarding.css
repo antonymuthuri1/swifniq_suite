@@ -1,0 +1,35 @@
+.ob-top-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #041135; /* Dark blue background */
+}
+
+/* Inner container holds the form with white background */
+.ob-inner-container {
+  display: flex;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 800px;
+  height: 500px;
+}
+
+
+
+ /* Media query for screens smaller than 768px (tablets or mobile) */
+ @media (max-width: 768px) {
+  .ob-inner-container {
+    display: flex;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    height: 400px;
+  }
+
+  
+}

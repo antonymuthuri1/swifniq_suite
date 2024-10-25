@@ -1,0 +1,74 @@
+.navbar {
+  display: flex;
+  width: 100vw;
+  background-color: rgb(11, 17, 95);
+  align-items:stretch;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.logo {
+  display: flex;
+  width: 250px;; /* Set fixed width for logo */
+  justify-content: start;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 2px;
+}
+
+.searchContainer {
+  flex-grow: 1; /* Allow this to stretch and fill remaining space */
+}
+
+.searchContainerInput{
+  width: 100%; /* Ensure the input field fills the container */
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 100px;
+  height: 40px;
+}
+
+.profileIcons {
+  width: 250px;
+  align-items: center;
+  justify-content: end;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 7px;
+}
+
+.profileCircle {
+  width: 70px; /* Set the width of the circle */
+  height: 70px; /* Set the height of the circle */
+  border: 1px solid orange; /* Set border color and thickness */
+  background-color: white;
+  margin-left: 15px;
+  border-radius: 50%; /* Make it circular */
+  display: flex; /* Center the image */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
+.profile {
+  width: 100%; /* Make image width 100% of the circle */
+  height: auto; /* Keep aspect ratio */
+}
+
+.icon {
+  display: flex;
+  font-size: 22px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  padding: 2px;
+  text-align: center;
+  background-color: white;
+  border-radius: 50px;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  margin-left: 15px; /* Optional: add spacing between icons */
+}
+
+
+
