@@ -26,9 +26,14 @@ const Login = () => {
         router.push('/dashboard');  // Navigate to dashboard after login
       }, 2000);
       
-    } catch (err: any) {  
+    } catch (err: unknown) {  
       setLoading(false);
-      setError((err as Error).message);  
+      // setError((err as Error).message);  
+      if (err instanceof Error) {
+        setError(err.message); // Safely access the error message
+      } else {
+        setError('An unexpected error occurred.'); // Fallback in case the error is not of type Error
+      }
     }
   };
 

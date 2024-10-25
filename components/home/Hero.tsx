@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 export default function Hero() {
@@ -10,7 +11,7 @@ export default function Hero() {
           <button className="get-started-btn" onClick={() => window.location.href = '#pricing'}>Get Started</button>
         </div>
         <div className="hero-image">
-          <img src="/images/hero-image.jpeg " alt="Hero Image" />
+          <Image src="/images/hero-image.jpeg " alt="Hero Image" />
         </div>
       </div>
     </section>

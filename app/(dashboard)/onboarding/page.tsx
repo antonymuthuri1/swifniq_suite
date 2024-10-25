@@ -2,10 +2,7 @@
 
 import React, { useState } from 'react';
 import Sidebar from '@/components/dashboard/Sidebar';  // Sidebar component
-import DashboardContent from '@/components/dashboard/DashboardContent';  // Main content component
 import './onboarding.css'; // CSS file for styling
-import Footer from '@/components/dashboard/Footer';
-import Navbar from '@/components/dashboard/Navbar';
 import LoadingSpinner from '@/components/loadingSpinner'; // Import loading spinner
 
 

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 export default function Benefits() {
@@ -5,7 +6,7 @@ export default function Benefits() {
     <section className="benefits" id="benefits">
       <div className="benefits-content">
         <div className="benefits-image">
-          <img src="/images/benefits-image.jpeg" alt="Benefits Image" />
+          <Image src="/images/benefits-image.jpeg" alt="Benefits Image" />
         </div>
         <div className="benefits-text">
           <h2 className='benefits-text-h1'>Why Choose Us?</h2>

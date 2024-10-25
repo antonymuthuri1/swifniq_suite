@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import { auth } from '@/firebaseConfig';
 import LoadingSpinner from '@/components/loadingSpinner'; // Import loading spinner
 
-const proSignup = () => {
+const ProSignup = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -15,11 +15,6 @@ const proSignup = () => {
 
 
   const [activeTab, setActiveTab] = useState('signup');
-
-  const handleSignupComplete = () => {
-    setActiveTab('payment'); 
-    setActiveTab('signup');
-  };
 
   const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -46,14 +41,15 @@ const proSignup = () => {
 
       
     } 
-    catch (err: any) {  
+    catch (err: unknown) {  
       setLoading(false);
-      setError((err as Error).message);  
+      // setError((err as Error).message);  
+      if (err instanceof Error) {
+        setError(err.message); // Safely access the error message
+      } else {
+        setError('An unexpected error occurred.'); // Fallback in case the error is not of type Error
+      }
     }
-    // catch (err) {
-    //   setLoading(false);
-    //   setError(err.message);
-    // }
   };
 
  
@@ -154,4 +150,4 @@ const proSignup = () => {
   );
 };
 
-export default proSignup;
+export default ProSignup;

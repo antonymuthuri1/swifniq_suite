@@ -1,6 +1,7 @@
 // components/Navbar.tsx
 import React from 'react';
 import styles from '@/components/dashboard/styles/Navbar.module.css';
+import Image from 'next/image';
 
 const Navbar = () => {
   return (
@@ -16,7 +17,7 @@ const Navbar = () => {
         <span className={styles.icon}>🔔</span>
         <span className={styles.icon}>⚙️</span>
         <div className={styles.profileCircle}>
-          <img src="profile.jpg" alt="Profile" className={styles.profile} />
+          <Image src="profile.jpg" alt="Profile" className={styles.profile} />
         </div>
       </div>
 

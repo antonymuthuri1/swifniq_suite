@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 export default function Features() {
@@ -10,7 +11,7 @@ export default function Features() {
           <button className="get-started-btn" onClick={() => window.location.href = '#pricing'}>Get Started</button>
         </div>
         <div className="features-image">
-          <img src="/images/features-image.jpeg" alt="Features Image" />
+          <Image src="/images/features-image.jpeg" alt="Features Image" />
         </div>
       </div>
     </section>
