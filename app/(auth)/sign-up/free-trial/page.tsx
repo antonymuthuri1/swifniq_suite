@@ -26,25 +26,9 @@ const FreeTrialSignUp = () => {
       setLoading(false);
       setError('✅ Account Created successfuly!');
 
-      setTimeout(async () => {
+      setTimeout(() => {
         
-        setLoading(true);
-        setError('Signing you In...');
-
-        try {
-          await signInWithEmailAndPassword(auth, email, password);
-      
-          setTimeout(() => {
-            //setLoading(false);
-            router.push('/dashboard'); 
-            // router.push('/Onboarding');  // Navigate to dashboard after login
-          }, 2000);
-      
-        } catch (err: any) {  
-          setLoading(false);
-          setError((err as Error).message);  
-        }
-        // handleLogin;
+        handleLogin();
 
       }, 2000);
 
@@ -60,8 +44,7 @@ const FreeTrialSignUp = () => {
     // }
   };
 
-  const handleLogin = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleLogin = async () => {
     setLoading(true);
     setError('Signing you In...');
 
